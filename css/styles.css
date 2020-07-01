@@ -16,20 +16,32 @@ body {
   margin: 0 auto;
 }
 
+/*
+@media only screen and (max-width: 599px){
+
+}
+*/
+
 
 /*
 
 NAVBAR 
 
 */
-nav {
+#nav-outer-container {
+  height: 96px; 
   background-color: #FFFFFF;
-  height: 96px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#nav-inner-container {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .navbar {
   padding: 0;
-  padding-left: .5rem;
 }
 
 .navbar-brand span, .nav-link {
@@ -38,18 +50,29 @@ nav {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  font-weight: 600;
+}
+
+.nav-link .fa .fa-search {
+  color: #3A3A3A;
+}
+
+a .nav-link:nth-child(5) {
+  padding-right: 0;
 }
 
 .navbar-brand span:nth-child(1) {
   font-weight: bold;
   color: #000000;
+  font-size: 1.6rem;
 }
 
 .navbar-brand span:nth-child(2) {
   font-weight: bold;
   color: #FCC139;
+  font-size: 1.6rem;
 }
 
 .navbar-light .navbar-nav .active>.nav-link {
@@ -93,13 +116,13 @@ MASTHEAD
   color: #FFFFFF;
 }
 
-#icon {
+#masthead-icon {
   margin: 0;
 }
 
 #masthead-content hr {
   border-top: 6px solid #FCC139;
-  margin: 0 880px 30px 0;
+  margin: 0 88% 3% 0;
 }
 
 #masthead-content #first-line {
@@ -123,12 +146,12 @@ MASTHEAD
 
 #experts {
   background: #D5A43B;
-  padding: 30px 20px;
+  padding: 30px 20px 20px 20px;
   color: #FFFFFF;
   position: absolute;
-  z-index: 10;
+  z-index: 100;
   top: 585px;
-  left: 169px;
+  left: 12.5%;
 }
 
 
@@ -158,6 +181,7 @@ CARDS
 
 .card-text small a {
   color: #FCC139;
+  font-weight: bold;
 }
 
 
@@ -222,8 +246,8 @@ RECENT PROJECTS
 #project-imgs {
   padding-left: 0;
   padding-right: 0;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .slide-img {
@@ -245,10 +269,17 @@ BLOG POSTS
 
 */
 #blog-posts {
-  padding: 20px 0 80px 0;
+  /*padding: 20px 0 80px 0;
+  margin-bottom: 30px;
+  background: #F6F6F6;*/
+  color: #3A3A3A;
+}
+
+#blog-posts-underlay {
+  padding: 20px 50px 80px 50px;
   margin-bottom: 30px;
   background: #F6F6F6;
-  color: #3A3A3A;
+  width: 85%;
 }
 
 #blog-posts-header {
@@ -264,11 +295,6 @@ BLOG POSTS
 .card-deck .text-center {
   line-height: 2rem;
   padding: 24px 8px;
-}
-
-#blog-posts div {
-  padding-left: 0;
-  padding-right: 0;
 }
 
 
@@ -416,11 +442,19 @@ TESTIMONIALS
 RECENT NEWS 
 
 */
+
 #recent-news {
-  padding: 20px 0 30px 0;
-  /*margin-bottom: 30px;*/
-  background: #F6F6F6;
+  /*padding: 20px 0 80px 0;
+  margin-bottom: 30px;
+  background: #F6F6F6;*/
   color: #3A3A3A;
+}
+
+#recent-news-underlay {
+  padding: 20px 50px 30px 50px;
+  margin-bottom: 20px;
+  background: #F6F6F6;
+  width: 85%;
 }
 
 #news-header {
@@ -433,11 +467,6 @@ RECENT NEWS
   color: #3A3A3A;
 }
 
-#recent-news div {
-  padding-left: 0;
-  padding-right: 0;
-}
-
 #recent-news .card .card-body {
     padding-left: 0;
     color: #3A3A3A;
@@ -445,7 +474,7 @@ RECENT NEWS
 }
 
 #recent-news .card-deck {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 #news-icon-controls i:nth-child(1), #news-icon-controls i:nth-child(2) {
@@ -460,7 +489,7 @@ OUR PARTNERS
 
 */
 #partners {
-  padding: 20px 0 20px 0;
+  padding: 10px 0 20px 0;
   margin-bottom: 30px;
   color: #3A3A3A;
 }
@@ -521,21 +550,33 @@ footer {
 .footer h6 {
   font-weight: bold;
   color: #FCC139;
+  margin-bottom: 30px;
 }
 
 .footer p {
   font-size: .8rem;
 }
 
+#footer-address a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/*
 #footer-project-imgs {
   padding-right: 1.75rem;
   padding-left: .5rem;
 }
+*/
 
 #footer-img-top {
   margin-bottom: .75rem;
 }
 
+#footer-img-top .col-md-3, #footer-img-bottom .col-md-3 {
+  padding-right: .5rem;
+}
+/*
 #footer-img-top .col-md-3:nth-child(1), #footer-img-bottom .col-md-3:nth-child(1) {
   padding-right: .25rem;
   padding-left: .5rem;
@@ -547,21 +588,29 @@ footer {
   padding-right: .5rem;
   padding-left: .25rem;
 }
+*/
 
 .footer-img {
   width: 100%;
   height: auto;
 }
 
-#subscribe {
+#subscribe-email input {
+  border-radius: 3px;
+}
+
+#subscribe-email .form-control {
+  font-size: .8rem;
+  font-weight: bold;
+  color: rgba(32, 46, 49, 0.2);
+}
+
+#subscribe-btn {
+  font-size: .8rem;
   background-color: transparent;
   color: #FCC139;
   border: 1px solid #FCC139;
   border-radius: 2px; 
-}
-
-#subscribe-email {
-  border-radius: 3px;
 }
 
 #copyright {
