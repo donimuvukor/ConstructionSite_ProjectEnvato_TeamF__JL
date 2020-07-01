@@ -17,11 +17,10 @@
 
 <body class="wrapper">
 
-    <!-- Page Header -->
-    <div class="container">
+    <!-- Navbar -->
+    <nav id="nav-outer-container" class="navbar fixed-top navbar-expand-lg navbar-light container-fluid">
 
-        <!-- Navbar -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light w-75 container">
+        <div id="nav-inner-container" class="container w-75">
 
             <!-- Brand Logo -->
             <a class="navbar-brand" href="#">
@@ -49,7 +48,7 @@
                     <a class="nav-link" href="#">CONTACT US</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: #3A3A3A;">
+                    <a class="nav-link" href="#">
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </a>
                 </li>
@@ -57,11 +56,11 @@
                 <!-- Navigation Links -->
 
             </div>
-        </nav>
-        <!-- Navbar -->
 
-    </div>
-    <!-- Page Header -->
+        </div>
+
+    </nav>
+    <!-- Navbar -->
 
     <!-- Main Page Content -->
     <main>
@@ -71,7 +70,9 @@
 
             <!-- We Are Experts -->
             <div id="experts" class="container px-0 w-75 d-flex justify-content-center">
-                WE ARE EXPERTS, WE ARE AWESOME, WE ARE GOOD AT WHAT WE DO
+                <p>
+                    WE ARE EXPERTS, WE ARE AWESOME, WE ARE GOOD AT WHAT WE DO
+                </p>
             </div>
             <!-- We Are Experts -->
 
@@ -80,7 +81,7 @@
                 <div class="container w-75">
                     <div id="masthead-content">
                         <h1>WE ARE</h1> 
-                        <h1 id="icon">iCONSTRUCT</h1>
+                        <h1 id="masthead-icon">iCONSTRUCT</h1>
                         <hr>
                         <p id="first-line">We set the pace for others to follow in the construction business.</p>
                         <p id="second-line">If we can think it, we can make it!</p>
@@ -186,27 +187,29 @@
         
         <!-- Blog Posts -->
         <div id="blog-posts">
-            <div class="container w-75">
-                <div id="blog-posts-header" class="section-title">
-                    <h4>BLOG POSTS</h4>
-                </div>
-                <div id="blog-content">
-                    <div class="card-deck">
-                        <div class="card">
-                            <img class="card-img-top slide-image" 
-                                 src="img/blog_left.png" alt="Construction worker on site">
-                        </div>
-                        <div class="card text-center">
-                            <h5>CONSTRUCTION</h5>
-                            <p>
-                                We have a lot to say but we believe that actions speak a lot
-                                better than words. <br>
-                                Our customers...
-                            </p>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top slide-image" 
-                                 src="img/blog_left.png" alt="Construction worker on site">
+            <div id="blog-posts-underlay" class="container">
+                <div class="container-fluid">
+                    <div id="blog-posts-header" class="section-title">
+                        <h4>BLOG POSTS</h4>
+                    </div>
+                    <div id="blog-content">
+                        <div class="card-deck">
+                            <div class="card">
+                                <img class="card-img-top slide-image" 
+                                     src="img/blog_left.png" alt="Construction worker on site">
+                            </div>
+                            <div class="card text-center">
+                                <h5>CONSTRUCTION</h5>
+                                <p>
+                                    We have a lot to say but we believe that actions speak a lot
+                                    better than words. <br>
+                                    Our customers...
+                                </p>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top slide-image" 
+                                     src="img/blog_left.png" alt="Construction worker on site">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -303,73 +306,78 @@
 
         <!-- Recent News -->
         <div id="recent-news">
-            <div class="container w-75">
+            <div id="recent-news-underlay" class="container">
 
-                <!-- Recent News Header -->
-                <div id="news-header" class="section-title">
-                    <h4>RECENT NEWS</h4>
-                </div>
-                <!-- Recent News Header -->
+                <div class="container-fluid">
 
-                <!-- Recent News Items -->
-                <div class="card-deck">
-                    <div class="card">
-                        <img class="card-img-top" src="img/first_card.png" alt="Best House">
-                        <div class="card-body">
-                            <h5 class="card-title">BEST HOUSE</h5>
-                            <p class="card-text my-4">Our job is not just to make what you have in mind become 
-                                a reality but also to help you achieve the dream...
-                            </p>
-                            <p class="card-text">
-                                <small class="text-muted">
-                                    <a href="#">READ MORE</a>
-                                </small>
-                            </p>
+                    <!-- Recent News Header -->
+                    <div id="news-header" class="section-title">
+                        <h4>RECENT NEWS</h4>
+                    </div>
+                    <!-- Recent News Header -->
+    
+                    <!-- Recent News Items -->
+                    <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top" src="img/first_card.png" alt="Best House">
+                            <div class="card-body">
+                                <h5 class="card-title">BEST HOUSE</h5>
+                                <p class="card-text my-4">Our job is not just to make what you have in mind become 
+                                    a reality but also to help you achieve the dream...
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-muted">
+                                        <a href="#">READ MORE</a>
+                                    </small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="img/second_card.png" alt="Modern Design">
+                            <div class="card-body">
+                                <h5 class="card-title">BEST HOUSE</h5>
+                                <p class="card-text my-4">Our job is not just to make what you have in mind become 
+                                    a reality but also to help you achieve the dream...
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-muted">
+                                        <a href="#">READ MORE</a>
+                                    </small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="img/third_card.png" alt="Team Work">
+                            <div class="card-body">
+                                <h5 class="card-title">BEST HOUSE</h5>
+                                <p class="card-text my-4">Our job is not just to make what you have in mind become 
+                                    a reality but also to help you achieve the dream...
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-muted">
+                                        <a href="#">READ MORE</a>
+                                    </small>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <img class="card-img-top" src="img/second_card.png" alt="Modern Design">
-                        <div class="card-body">
-                            <h5 class="card-title">BEST HOUSE</h5>
-                            <p class="card-text my-4">Our job is not just to make what you have in mind become 
-                                a reality but also to help you achieve the dream...
-                            </p>
-                            <p class="card-text">
-                                <small class="text-muted">
-                                    <a href="#">READ MORE</a>
-                                </small>
-                            </p>
-                        </div>
+                    <!-- Recent News Items -->
+    
+                    <!-- Recent News Image Controls -->
+                    <div id="news-icon-controls" class="text-center">
+                        <a href="">
+                            <i class="fas fa-caret-left fa-3x"></i>
+                        </a>
+                        <a href="">
+                            <i class="fas fa-caret-right fa-3x"></i>
+                        </a>
                     </div>
-                    <div class="card">
-                        <img class="card-img-top" src="img/third_card.png" alt="Team Work">
-                        <div class="card-body">
-                            <h5 class="card-title">BEST HOUSE</h5>
-                            <p class="card-text my-4">Our job is not just to make what you have in mind become 
-                                a reality but also to help you achieve the dream...
-                            </p>
-                            <p class="card-text">
-                                <small class="text-muted">
-                                    <a href="#">READ MORE</a>
-                                </small>
-                            </p>
-                        </div>
-                    </div>
+                    <!-- Recent News Image Controls -->
+    
                 </div>
-                <!-- Recent News Items -->
-
-                <!-- Recent News Image Controls -->
-                <div id="news-icon-controls" class="text-center">
-                    <a href="">
-                        <i class="fas fa-caret-left fa-3x"></i>
-                    </a>
-                    <a href="">
-                        <i class="fas fa-caret-right fa-3x"></i>
-                    </a>
-                </div>
-                <!-- Recent News Image Controls -->
 
             </div>
+
         </div>
         <!-- Recent News -->
 
@@ -421,52 +429,72 @@
                 <p>We set the pace for others to follow in the construction business.</p>
                 <p>If we can think it, we can make it.</p>
             </div>
-            <div class="col-md-3">
+            <div id="footer-address" class="col-md-3">
                 <h6>GET IN TOUCH</h6>
                 <p>No. 111, Federal Housing Estate, Victoria Island</p>
-                <p>+234 (0) 705 556 6674</p>
-                <p>iconstruct@gmail.com</p>
+                <a href="tel:+234 705 556 6674">
+                    <p>+234 (0) 705 556 6674</p>
+                </a>
+                <a href="mailto:iconstruct@gmail.com">
+                    <p>iconstruct@gmail.com</p>
+                </a>
             </div>
             <div id="footer-project-imgs" class="col-md-3">
                 <h6>RECENT PROJECTS</h6>
-                <div id="footer-img-top" class="row">
+                <div id="footer-img-top" class="row no-gutters">
                     <div class="col-md-3">
-                        <img class="footer-img" src="img/footer-top-left.svg" alt="Project Image">
+                        <a href="">
+                            <img class="footer-img" src="img/footer-top-left.svg" alt="Project Image">
+                        </a>
                     </div>
                     <div class="col-md-3">
-                        <img class="footer-img" src="img/footer-top-left-1.svg" alt="Project Image">
+                        <a href="">
+                            <img class="footer-img" src="img/footer-top-left-1.svg" alt="Project Image">
+                        </a>
+                        
                     </div>
                     <div class="col-md-3">
-                        <img class="footer-img" src="img/footer-top-left-2.svg" alt="Project Image">
+                        <a href="">
+                            <img class="footer-img" src="img/footer-top-left-2.svg" alt="Project Image">
+                        </a>
                     </div>
                     <div class="col-md-3">
-                        <img class="footer-img" src="img/footer-top-right.svg" alt="Project Image">
+                        <a href="">
+                            <img class="footer-img" src="img/footer-top-right.svg" alt="Project Image">
+                        </a>
                     </div>
                 </div>
-                <div id="footer-img-bottom" class="row">
+                <div id="footer-img-bottom" class="row no-gutters">
                     <div class="col-md-3">
-                        <img class="footer-img" src="img/footer-bottom-left.svg" alt="Project Image">
+                        <a href="">
+                            <img class="footer-img" src="img/footer-bottom-left.svg" alt="Project Image">
+                        </a>
                     </div>
                     <div class="col-md-3">
-                        <img class="footer-img" src="img/footer-bottom-left-1.svg" alt="Project Image">
+                        <a href="">
+                            <img class="footer-img" src="img/footer-bottom-left-1.svg" alt="Project Image">
+                        </a>
                     </div>
                     <div class="col-md-3">
-                        <img class="footer-img" src="img/footer-bottom-left-2.svg" alt="Project Image">
+                        <a href="">
+                            <img class="footer-img" src="img/footer-bottom-left-2.svg" alt="Project Image">
+                        </a>
                     </div>
                     <div class="col-md-3">
-                        <img class="footer-img" src="img/footer-bottom-right.svg" alt="Project Image">
+                        <a href="">
+                            <img class="footer-img" src="img/footer-bottom-right.svg" alt="Project Image">
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <h6>SUBSCRIBE</h6>
                 <form>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="subscribe-email" 
-                               placeholder="EMAIL HERE">
+                    <div id="subscribe-email" class="form-group">
+                        <input type="email" class="form-control" placeholder="EMAIL HERE">
                     </div>
                 </form>
-                <a id="subscribe" href="" type="button" class="btn btn-md sub-section-btn">
+                <a id="subscribe-btn" href="" type="button" class="btn btn-md sub-section-btn">
                     SUBSCRIBE
                 </a>
             </div>
