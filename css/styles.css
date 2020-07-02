@@ -341,9 +341,18 @@ OUR SERVICES
   padding-left: 88px;
 }
 
-#services-icon-controls i:nth-child(1), #services-icon-controls i:nth-child(2) {
+#services-icon-controls a:nth-child(1) i, #services-icon-controls a:nth-child(2) i {
   color: #FCC139;
-  padding: 0 15px;
+  background-color: #202E31;
+  padding: 0 10px;
+}
+
+#services-icon-controls a:nth-child(1) i {
+  margin-right: 15px;
+}
+
+#services-icon-controls a:nth-child(2) i {
+  margin-left: 15px;
 }
 
 #services-icons .card-deck .card {
@@ -477,9 +486,18 @@ RECENT NEWS
   margin-bottom: 15px;
 }
 
-#news-icon-controls i:nth-child(1), #news-icon-controls i:nth-child(2) {
+#news-icon-controls a:nth-child(1) i, #news-icon-controls a:nth-child(2) i {
   color: #FCC139;
-  padding: 0 15px;
+  background-color: #202E31;
+  padding: 0 10px;
+}
+
+#news-icon-controls a:nth-child(1) i {
+  margin-right: 15px;
+}
+
+#news-icon-controls a:nth-child(2) i {
+  margin-left: 15px;
 }
 
 
@@ -525,9 +543,18 @@ OUR PARTNERS
   border-radius: 4px;
 }
 
-#partners-icon-controls i:nth-child(1), #partners-icon-controls i:nth-child(2) {
+#partners-icon-controls a:nth-child(1) i, #partners-icon-controls a:nth-child(2) i {
   color: #FCC139;
-  padding: 0 15px;
+  background-color: #202E31;
+  padding: 0 10px;
+}
+
+#partners-icon-controls a:nth-child(1) i {
+  margin-right: 15px;
+}
+
+#partners-icon-controls a:nth-child(2) i {
+  margin-left: 15px;
 }
 
 
